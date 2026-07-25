@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -82,9 +83,9 @@ export default function FaqSection() {
     <section className="py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="faq">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block px-3.5 py-1 rounded-md bg-gold-500/10 text-gold-700 border border-gold-500/25 text-xs font-bold uppercase tracking-widest mb-3">
-            FREQUENTLY ASKED QUESTIONS
+        <ScrollReveal delay={0} className="text-center max-w-3xl mx-auto mb-16">
+          <div className="section-label-accent mb-3">
+            <span>FREQUENTLY ASKED QUESTIONS</span>
           </div>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-950 mb-3 tracking-tight">
             Got Questions? <span className="gold-gradient-text">We Have Answers.</span>
@@ -92,7 +93,7 @@ export default function FaqSection() {
           <p className="font-sans text-xs md:text-sm text-slate-700 font-medium">
             Verified information on judicial eligibility, CLAT exam pattern, syllabus, and campus admissions
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* Category Tabs */}
         <div className="flex flex-wrap justify-center gap-2.5 mb-12">
@@ -110,8 +111,8 @@ export default function FaqSection() {
               }}
               className={`px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gold-500 ${
                 category === tab.id
-                  ? "bg-navy-950 text-gold-400 border border-gold-500/40 shadow-navy-glow"
-                  : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90 shadow-subtle"
+                  ? "bg-navy-950 text-gold-400 border border-gold-500/50 shadow-navy-glow ring-2 ring-gold-500/30 scale-[1.02]"
+                  : "bg-white text-slate-700 hover:bg-slate-50 hover:text-navy-950 border border-slate-200/90 shadow-subtle"
               }`}
             >
               {tab.label}
@@ -124,41 +125,42 @@ export default function FaqSection() {
           {filteredFaqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
-              <div
-                key={idx}
-                className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
-                  isOpen
-                    ? "bg-white border-gold-500/50 shadow-card-hover border-l-4 border-l-gold-500"
-                    : "bg-white border-slate-200/90 shadow-card hover:border-gold-500/40 hover:-translate-y-0.5"
-                }`}
-              >
-                <button
-                  onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  aria-expanded={isOpen}
-                  className="w-full p-6 text-left flex justify-between items-center space-x-4 focus:outline-none transition-colors"
+              <ScrollReveal key={idx} delay={idx * 60}>
+                <div
+                  className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
+                    isOpen
+                      ? "bg-white border-gold-500/60 shadow-card-hover border-l-4 border-l-gold-500"
+                      : "bg-white border-slate-200/90 shadow-card hover:border-gold-500/40 hover:-translate-y-0.5"
+                  }`}
                 >
-                  <span className="font-serif text-base md:text-lg font-bold text-navy-950">
-                    {faq.q}
-                  </span>
-                  <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-                      isOpen
-                        ? "bg-gold-500 text-navy-950 shadow-gold rotate-180"
-                        : "bg-slate-100 text-slate-700 border border-slate-200"
-                    }`}
+                  <button
+                    onClick={() => setOpenIndex(isOpen ? null : idx)}
+                    aria-expanded={isOpen}
+                    className="w-full p-6 text-left flex justify-between items-center space-x-4 focus:outline-none transition-colors"
                   >
-                    <span className="material-symbols-outlined text-lg">
-                      keyboard_arrow_down
+                    <span className="font-serif text-base md:text-lg font-bold text-navy-950">
+                      {faq.q}
                     </span>
-                  </div>
-                </button>
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
+                        isOpen
+                          ? "bg-gold-500 text-navy-950 shadow-gold rotate-180"
+                          : "bg-slate-100 text-slate-700 border border-slate-200 rotate-0"
+                      }`}
+                    >
+                      <span className="material-symbols-outlined text-lg">
+                        keyboard_arrow_down
+                      </span>
+                    </div>
+                  </button>
 
-                {isOpen && (
-                  <div className="px-6 pb-6 pt-2 font-sans text-xs md:text-sm text-slate-700 leading-relaxed border-t border-slate-100 bg-amber-50/15 font-normal">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
+                  {isOpen && (
+                    <div className="pl-8 md:pl-10 pr-6 pb-6 pt-3 font-sans text-xs md:text-sm text-[#444] leading-relaxed border-t border-slate-100 bg-amber-50/15 font-normal">
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              </ScrollReveal>
             );
           })}
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -18,10 +19,10 @@ export default function Contact() {
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Campus Information */}
-          <div className="lg:col-span-5 space-y-8">
+          <ScrollReveal delay={0} className="lg:col-span-5 space-y-8">
             <div>
-              <div className="inline-block px-3.5 py-1 rounded-md bg-gold-500/10 text-gold-700 border border-gold-500/25 text-xs font-bold uppercase tracking-widest mb-3">
-                GET IN TOUCH
+              <div className="section-label-accent mb-3">
+                <span>GET IN TOUCH</span>
               </div>
               <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-950 mb-3 tracking-tight">
                 Campus Location
@@ -67,10 +68,10 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Right Column: Clean White Form Card */}
-          <div className="lg:col-span-7 bg-white p-8 md:p-10 rounded-2xl border border-slate-200/90 shadow-elevated">
+          <ScrollReveal delay={150} className="lg:col-span-7 bg-white p-8 md:p-10 rounded-2xl border border-slate-200/90 shadow-elevated">
             <h3 className="font-serif text-2xl font-bold text-navy-950 mb-2">
               Enquire Now
             </h3>
@@ -165,7 +166,7 @@ export default function Contact() {
                 </button>
               </form>
             )}
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function WhyKLPA() {
   const edgePoints = [
@@ -38,9 +39,9 @@ export default function WhyKLPA() {
     <section className="py-24 bg-slate-50 relative">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-block px-3.5 py-1 rounded-md bg-gold-500/10 text-gold-700 border border-gold-500/25 text-xs font-bold uppercase tracking-widest mb-3">
-            THE ACADEMY ADVANTAGE
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-16">
+          <div className="section-label-accent mb-3">
+            <span>THE ACADEMY ADVANTAGE</span>
           </div>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-950 mb-3 tracking-tight">
             The Kanha Law Point Academy Edge
@@ -48,38 +49,39 @@ export default function WhyKLPA() {
           <p className="font-sans text-xs md:text-sm text-slate-700 font-medium">
             6 core pillars setting the benchmark for legal and judicial education
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* 6 Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {edgePoints.map((item, index) => (
-            <div
-              key={index}
-              className="card-top-accent bg-white p-8 rounded-2xl border border-slate-200/90 shadow-card hover:shadow-card-hover hover:border-gold-500/40 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex justify-between items-start mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/25 p-2.5 flex items-center justify-center group-hover:scale-105 group-hover:border-gold-500/50 shadow-subtle transition-all duration-300">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={64}
-                      height={64}
-                      className="w-full h-full object-contain drop-shadow-sm"
-                    />
+            <ScrollReveal key={index} delay={index * 80}>
+              <div
+                className={`card-top-accent p-8 rounded-2xl border border-slate-200/90 shadow-card card-elevated-hover group flex flex-col justify-between h-full ${
+                  index % 2 === 0 ? "bg-white" : "bg-[#FAFBFF]"
+                }`}
+              >
+                <div>
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/25 p-2.5 flex items-center justify-center group-hover:scale-105 group-hover:bg-gold-500/20 shadow-subtle transition-all duration-300">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-contain drop-shadow-sm"
+                      />
+                    </div>
+                    <div className="w-3 h-3 rounded-full bg-gold-500 shadow-sm border border-gold-400 mt-1"></div>
                   </div>
-                  <span className="font-serif text-xs font-bold text-gold-700 bg-gold-500/10 px-2.5 py-1 rounded-md border border-gold-500/20 shadow-subtle">
-                    0{index + 1}
-                  </span>
+                  <h3 className="font-serif text-xl font-bold text-navy-950 mb-2 group-hover:text-gold-600 transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="font-sans text-xs md:text-sm text-slate-700 leading-relaxed font-normal">
+                    {item.desc}
+                  </p>
                 </div>
-                <h3 className="font-serif text-xl font-bold text-navy-950 mb-2 group-hover:text-gold-600 transition-colors">
-                  {item.title}
-                </h3>
-                <p className="font-sans text-xs md:text-sm text-slate-700 leading-relaxed font-normal">
-                  {item.desc}
-                </p>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

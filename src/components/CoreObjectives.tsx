@@ -1,3 +1,5 @@
+import ScrollReveal from "@/components/ScrollReveal";
+
 export default function CoreObjectives() {
   const objectives = [
     {
@@ -21,9 +23,9 @@ export default function CoreObjectives() {
     <section className="py-24 bg-slate-100/80 border-y border-slate-200/60 relative">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-block px-3.5 py-1 rounded-md bg-gold-500/10 text-gold-700 border border-gold-500/25 text-xs font-bold uppercase tracking-widest mb-3">
-            ACADEMIC FOUNDATION
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-16">
+          <div className="section-label-accent mb-3">
+            <span>ACADEMIC FOUNDATION</span>
           </div>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy-950 mb-3 tracking-tight">
             Our Core Objectives
@@ -31,27 +33,26 @@ export default function CoreObjectives() {
           <p className="font-sans text-xs md:text-sm text-slate-700 font-medium">
             We focus on 3 core pillars to guarantee competitive legal success
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* 3 Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {objectives.map((obj, i) => (
-            <div
-              key={i}
-              className="card-top-accent bg-white p-8 rounded-2xl border border-slate-200/90 shadow-card hover:shadow-card-hover hover:border-gold-500/40 hover:-translate-y-1 transition-all duration-300 text-center group flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-14 h-14 rounded-2xl bg-gold-500/15 text-gold-600 mx-auto flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-gold-500 group-hover:text-navy-950 shadow-subtle border border-gold-500/30 transition-all duration-300">
-                  <span className="material-symbols-outlined text-2xl">{obj.icon}</span>
+            <ScrollReveal key={i} delay={i * 80}>
+              <div className="card-top-accent bg-[#FAFAFA] p-8 rounded-2xl border border-[#EEEEEE] shadow-card card-elevated-hover text-center group flex flex-col justify-between h-full">
+                <div>
+                  <div className="w-14 h-14 rounded-full bg-gold-500/10 text-gold-600 mx-auto flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-gold-500 group-hover:text-navy-950 shadow-subtle border border-gold-500/30 transition-all duration-300">
+                    <span className="material-symbols-outlined text-3xl">{obj.icon}</span>
+                  </div>
+                  <h3 className="font-serif text-xs font-extrabold uppercase tracking-wider text-navy-950 mb-3 group-hover:text-gold-600 transition-colors">
+                    {obj.title}
+                  </h3>
+                  <p className="font-sans text-xs md:text-sm text-slate-700 leading-relaxed font-normal">
+                    {obj.desc}
+                  </p>
                 </div>
-                <h3 className="font-serif text-xs font-extrabold uppercase tracking-wider text-navy-950 mb-3 group-hover:text-gold-600 transition-colors">
-                  {obj.title}
-                </h3>
-                <p className="font-sans text-xs md:text-sm text-slate-700 leading-relaxed font-normal">
-                  {obj.desc}
-                </p>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
