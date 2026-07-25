@@ -7,63 +7,100 @@ export default function FaqSection() {
   const [category, setCategory] = useState<string>("judiciary");
 
   const faqs = [
+    // Judiciary
     {
       cat: "judiciary",
-      q: "Can final-year LLB students appear for Judicial Services Examinations (PCS-J)?",
-      a: "Yes, final-year LLB students can appear in the Preliminary Examination for most state judicial services (such as UP PCS-J, MP CJ, Bihar), provided they produce their final degree certificate at the time of the Viva-Voce interview.",
+      q: "What is the eligibility criteria for Civil Judge Junior Division (PCS-J)?",
+      a: "Law graduates possessing an LL.B Degree (3-Year or 5-Year Integrated) from a recognized university who are enrolled or eligible to enroll as an Advocate under the Advocates Act, 1961 are eligible. Final-year law students can also appear in the Preliminary Examination provided they present their qualifying degree certificate prior to the Viva-Voce interview.",
     },
     {
       cat: "judiciary",
-      q: "How does Kanha Law Point Academy prepare students for state-specific local laws?",
-      a: "Kanha Law Point Academy conducts specialized local law modules covering state-specific statutes like UP Urban Buildings Act, UP Revenue Code, MP Land Revenue Code, and Rajasthan Local Acts along with Bare Act indexing workshops.",
+      q: "What is Higher Judiciary Services (HJS) and who can apply?",
+      a: "Higher Judiciary Services (HJS) is direct recruitment for appointment as Additional District & Sessions Judge (ADJ). Candidates must possess an LL.B Degree and have a minimum of 7 years of continuous active litigating practice as an Advocate in courts.",
+    },
+    {
+      cat: "judiciary",
+      q: "What is the 3-stage examination structure for Judicial Services?",
+      a: "The judicial selection process comprises 3 tiers: 1. Preliminary Examination (Objective screening test covering General Knowledge & Law), 2. Mains Examination (Descriptive written papers covering Civil Law, Criminal Law, Local State Statutes, and Language/Translation), and 3. Viva-Voce Board (Personality and judicial temperament evaluation before a panel of High Court Judges and legal experts).",
+    },
+    {
+      cat: "judiciary",
+      q: "How does KLPA prepare aspirants for state-specific local laws?",
+      a: "KLPA conducts dedicated state-specific local law modules covering key statutes such as the UP Urban Buildings Act, UP Revenue Code, MP Land Revenue Code, and Rajasthan Local Acts alongside Bare Act word-by-word indexing and judgment writing workshops.",
+    },
+
+    // CLAT & NLUs
+    {
+      cat: "clat",
+      q: "What is the eligibility requirement and exam pattern for CLAT (UG)?",
+      a: "Candidates must have passed 10+2 (Intermediate) or equivalent examination with a minimum of 45% aggregate marks (40% for SC/ST candidates). There is no upper age limit. The exam is 2 hours (120 minutes) featuring 120 passage-based MCQs (+1.0 mark for correct, -0.25 mark for incorrect) across 5 sections: English Language, Current Affairs & GK, Legal Reasoning, Logical Reasoning, and Quantitative Techniques.",
     },
     {
       cat: "clat",
-      q: "Is 1 year of preparation sufficient for clearing CLAT-UG?",
-      a: "Absolutes depend on individual dedication, but with Kanha Law Point Academy's structured 1-Year Target Module (covering 30+ mock tests, daily reading comprehension drills, and current affairs compendiums), 4-5 hours of focused daily preparation is fully sufficient for top NLU ranks.",
+      q: "Who can appear for CLAT (PG) LLM and how are scores utilized?",
+      a: "Candidates holding an LL.B Degree (3-Year or 5-Year Integrated) or currently in their final year with at least 50% aggregate marks (45% for SC/ST) are eligible. CLAT-PG scores are utilized for NLU Master of Laws (LL.M) admissions as well as legal officer recruitment in leading PSUs (such as ONGC, Coal India, BHEL, SAIL) and Armed Forces JAG Officer commissions.",
     },
     {
       cat: "clat",
-      q: "What is the exam pattern for CLAT-UG?",
-      a: "CLAT-UG comprises 120 multiple-choice questions to be solved in 2 hours. It covers 5 sections: English Language, Current Affairs & GK, Legal Reasoning, Logical Reasoning, and Quantitative Techniques.",
+      q: "Is 1 year of preparation sufficient for securing a top NLU rank in CLAT?",
+      a: "Yes. With KLPA's structured 1-Year Foundation & Target Module—which includes 30+ full-length mock tests, daily passage reading comprehension drills, current affairs compendiums, and doubt-resolution sessions—4 to 5 hours of daily focused preparation is fully sufficient to crack top NLUs.",
+    },
+
+    // Other Exams
+    {
+      cat: "other-exams",
+      q: "What other competitive law examinations are covered at KLPA?",
+      a: "KLPA provides specialized coaching for 18+ legal competitive exams including SEBI Grade A Law Officer, JAG Officer (Army/Navy/Air Force), AILET (NLU Delhi), Traditional LLB Entrances (DU LLB, BHU, Allahabad University), MH CET Law, SLAT (Symbiosis), LSAT India, UPSC Legal Officers, and IBPS Specialist Law Officer (SO).",
+    },
+    {
+      cat: "other-exams",
+      q: "What is the JAG (Judge Advocate General) Military Law Commission entry?",
+      a: "JAG Officer entry is direct recruitment into the legal branch of the Indian Armed Forces (Army, Navy, Air Force) for law graduates with minimum 55% aggregate marks and CLAT-PG qualification, followed by the Services Selection Board (SSB) interview.",
+    },
+
+    // Admissions & Campus
+    {
+      cat: "admissions",
+      q: "Where is the KLPA campus located and what are the office hours?",
+      a: "KLPA Campus is located at Office No. 8, Near Safipur, Harjinder Nagar Inter College, GT Road, Kanpur Nagar, UP - 208007. Phone: +91-9838477453. Office hours are Monday to Saturday: 8:00 AM – 7:30 PM, and Sunday: 9:00 AM – 2:00 PM.",
     },
     {
       cat: "admissions",
-      q: "What is the Scholarship Admission Test and how do I apply?",
-      a: "Our Scholarship Admission Test offers up to 100% tuition fee waivers for top rankers. You can register for free by submitting the online enquiry form or visiting our Kanpur campus.",
+      q: "Are evening or weekend batches available for practicing advocates?",
+      a: "Yes. KLPA offers dedicated evening and weekend batches tailored for practicing advocates, LL.M scholars, and working professionals targeting Higher Judiciary Services (HJS) or judicial state exams.",
     },
     {
       cat: "admissions",
-      q: "Are weekend or evening batches available for working advocates?",
-      a: "Yes! We offer dedicated evening and weekend batches for practicing lawyers and working professionals aiming for Higher Judiciary Services (HJS) or LLM admissions.",
+      q: "How can I register for demo classes or request a detailed prospectus?",
+      a: "You can fill out the online enquiry form on our website or visit our Kanpur campus directly to register for a free demo session, counseling guidance, and physical prospectus package.",
     },
   ];
 
   const filteredFaqs = faqs.filter((f) => f.cat === category);
 
   return (
-    <section className="py-24 bg-slate-100 relative" id="faq">
+    <section className="py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="faq">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gold-500/10 text-gold-600 border border-gold-500/30 text-xs font-bold uppercase tracking-widest mb-3">
-            <span>Got Questions?</span>
+          <div className="inline-block px-3.5 py-1 rounded-md bg-gold-500/10 text-gold-700 border border-gold-500/25 text-xs font-bold uppercase tracking-widest mb-3">
+            FREQUENTLY ASKED QUESTIONS
           </div>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-900 mb-4 tracking-tight">
-            Frequently Asked <span className="gold-gradient-text">Questions</span>
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-950 mb-3 tracking-tight">
+            Got Questions? <span className="gold-gradient-text">We Have Answers.</span>
           </h2>
-          <div className="w-20 h-1 bg-gold-500 mx-auto rounded-full mb-6"></div>
-          <p className="font-sans text-base md:text-lg text-slate-600 leading-relaxed">
-            Find answers to common queries regarding judicial services eligibility, CLAT exam pattern, batches, and admissions.
+          <p className="font-sans text-xs md:text-sm text-slate-700 font-medium">
+            Verified information on judicial eligibility, CLAT exam pattern, syllabus, and campus admissions
           </p>
         </div>
 
         {/* Category Tabs */}
-        <div className="flex justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-2.5 mb-12">
           {[
-            { id: "judiciary", label: "Judiciary PCS-J" },
-            { id: "clat", label: "CLAT & NLU Entrances" },
-            { id: "admissions", label: "Admissions & Batches" },
+            { id: "judiciary", label: "Judiciary (PCS-J & HJS)" },
+            { id: "clat", label: "CLAT (UG & PG)" },
+            { id: "other-exams", label: "SEBI, JAG & LLB Entrances" },
+            { id: "admissions", label: "Admissions & Campus" },
           ].map((tab) => (
             <button
               key={tab.id}
@@ -71,10 +108,10 @@ export default function FaqSection() {
                 setCategory(tab.id);
                 setOpenIndex(0);
               }}
-              className={`px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition-all ${
+              className={`px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gold-500 ${
                 category === tab.id
-                  ? "bg-navy-900 text-gold-400 border border-gold-500/40 shadow-navy"
-                  : "bg-white text-slate-700 hover:bg-slate-200 border border-slate-200"
+                  ? "bg-navy-950 text-gold-400 border border-gold-500/40 shadow-navy-glow"
+                  : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90 shadow-subtle"
               }`}
             >
               {tab.label}
@@ -91,22 +128,23 @@ export default function FaqSection() {
                 key={idx}
                 className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
                   isOpen
-                    ? "bg-card-gradient border-gold-500/60 shadow-card-hover border-l-4 border-l-gold-500"
-                    : "bg-white/90 border-slate-200/80 shadow-card hover:border-gold-500/40 hover:shadow-md"
+                    ? "bg-white border-gold-500/50 shadow-card-hover border-l-4 border-l-gold-500"
+                    : "bg-white border-slate-200/90 shadow-card hover:border-gold-500/40 hover:-translate-y-0.5"
                 }`}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
+                  aria-expanded={isOpen}
                   className="w-full p-6 text-left flex justify-between items-center space-x-4 focus:outline-none transition-colors"
                 >
-                  <span className="font-serif text-base md:text-lg font-bold text-navy-900">
+                  <span className="font-serif text-base md:text-lg font-bold text-navy-950">
                     {faq.q}
                   </span>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
                       isOpen
                         ? "bg-gold-500 text-navy-950 shadow-gold rotate-180"
-                        : "bg-slate-100 text-slate-600"
+                        : "bg-slate-100 text-slate-700 border border-slate-200"
                     }`}
                   >
                     <span className="material-symbols-outlined text-lg">
@@ -116,7 +154,7 @@ export default function FaqSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-2 font-sans text-sm md:text-base text-slate-600 leading-relaxed border-t border-slate-200/60 bg-amber-50/20 font-normal">
+                  <div className="px-6 pb-6 pt-2 font-sans text-xs md:text-sm text-slate-700 leading-relaxed border-t border-slate-100 bg-amber-50/15 font-normal">
                     {faq.a}
                   </div>
                 )}

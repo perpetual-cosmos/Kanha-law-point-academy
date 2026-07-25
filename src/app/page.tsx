@@ -7,6 +7,7 @@ import ExamsCovered from "@/components/ExamsCovered";
 import WhyKLPA from "@/components/WhyKLPA";
 import PedagogyFacilities from "@/components/PedagogyFacilities";
 import Director from "@/components/Director";
+import FaqSection from "@/components/FaqSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <WhyKLPA />
         <PedagogyFacilities />
         <Director />
+        <FaqSection />
         <Contact />
       </main>
       <Footer />

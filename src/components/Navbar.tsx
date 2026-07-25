@@ -42,8 +42,9 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center space-x-3">
-            <span className="bg-gold-500/15 text-gold-300 px-2.5 py-0.5 rounded text-[11px] font-bold border border-gold-500/30 tracking-wide">
-              ★ 5-Star Rated Institution
+            <span className="bg-gold-500/15 text-gold-300 px-2.5 py-0.5 rounded text-[11px] font-bold border border-gold-500/30 tracking-wide flex items-center space-x-1">
+              <span>Rated: </span>
+              <span className="text-gold-400 text-xs tracking-tighter">★★★★★</span>
             </span>
             <span className="text-slate-300 text-xs font-medium">Admissions Open 2026-27</span>
           </div>
@@ -53,8 +54,8 @@ export default function Navbar() {
       {/* Main Navigation Bar */}
       <nav
         className={`w-full transition-all duration-300 ${isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-card border-b border-slate-200/90 py-2 sm:py-2.5 text-navy-900"
-            : "bg-navy-950/90 backdrop-blur-md border-b border-gold-500/20 py-2.5 sm:py-3 text-white"
+          ? "bg-white/95 backdrop-blur-md shadow-card border-b border-slate-200/90 py-2 sm:py-2.5 text-navy-900"
+          : "bg-navy-950/90 backdrop-blur-md border-b border-gold-500/20 py-2.5 sm:py-3 text-white"
           }`}
       >
         <div className="flex justify-between items-center px-4 md:px-6 lg:px-8 max-w-container-max mx-auto">
@@ -109,6 +110,13 @@ export default function Navbar() {
               Facilities
             </a>
             <a
+              href="#faq"
+              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
+                }`}
+            >
+              FAQs
+            </a>
+            <a
               href="#contact"
               className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
                 }`}
@@ -156,6 +164,9 @@ export default function Navbar() {
             </a>
             <a href="#facilities" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
               Facilities
+            </a>
+            <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+              FAQs
             </a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
               Contact

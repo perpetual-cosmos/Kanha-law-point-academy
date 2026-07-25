@@ -15,7 +15,7 @@ export default function WhyKLPA() {
     {
       image: "/assets/edge/edge_track_record.webp",
       title: "Proven Track Record",
-      desc: "5-star rated institution with high success rates in PCS-J, NLU admissions, and legal commissions.",
+      desc: "Top ★★★★★ rated institution with high success rates in PCS-J, NLU admissions, and legal commissions.",
     },
     {
       image: "/assets/edge/edge_guidance.webp",

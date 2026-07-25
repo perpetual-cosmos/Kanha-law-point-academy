@@ -23,9 +23,9 @@ export default function Hero() {
           <span className="text-gold-500/40">•</span>
           <span className="text-slate-200">Kanpur, UP</span>
           <span className="text-gold-500/40">•</span>
-          <span className="flex items-center text-gold-400 font-bold">
-            <span className="text-gold-400 mr-1">★</span>
-            5-Star Rated
+          <span className="flex items-center text-gold-400 font-bold space-x-1">
+            <span className="text-gold-400 text-xs sm:text-sm tracking-tighter">★★★★★</span>
+            <span>Rated</span>
           </span>
         </div>
 

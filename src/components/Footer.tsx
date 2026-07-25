@@ -25,10 +25,13 @@ export default function Footer() {
               </div>
             </a>
             <p className="font-sans text-xs text-slate-300 leading-relaxed max-w-sm font-normal">
-              Kanha Law Point Academy is Uttar Pradesh&apos;s 5-Star rated institute for Judicial Services (PCS-J, HJS), CLAT-UG, CLAT-PG, and Law Officer examinations.
+              Kanha Law Point Academy is Uttar Pradesh&apos;s premier ★★★★★ rated institute for Judicial Services (PCS-J, HJS), CLAT-UG, CLAT-PG, and Law Officer examinations.
             </p>
             <div className="flex items-center space-x-3 text-gold-400 text-xs font-semibold">
-              <span>★ 5-Star Rated Institution</span>
+              <span className="flex items-center space-x-1">
+                <span className="text-gold-400 text-xs tracking-tighter">★★★★★</span>
+                <span>Rated Institution</span>
+              </span>
               <span className="text-gold-500/40">•</span>
               <span>Kanpur Nagar, UP</span>
             </div>
@@ -42,6 +45,7 @@ export default function Footer() {
               <li><a href="#courses" className="hover:text-gold-300 transition-colors">Coaching Programs</a></li>
               <li><a href="#exams" className="hover:text-gold-300 transition-colors">Exams Covered</a></li>
               <li><a href="#facilities" className="hover:text-gold-300 transition-colors">Facilities</a></li>
+              <li><a href="#faq" className="hover:text-gold-300 transition-colors">FAQs</a></li>
               <li><a href="#contact" className="hover:text-gold-300 transition-colors">Contact</a></li>
             </ul>
           </div>

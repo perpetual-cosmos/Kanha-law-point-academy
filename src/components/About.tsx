@@ -40,7 +40,10 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-serif text-sm font-bold text-navy-950">Est. 2020</h4>
-                  <p className="text-xs text-slate-600 font-medium mt-0.5">5-Star Rated Institution</p>
+                  <p className="text-xs text-slate-600 font-medium mt-0.5 flex items-center space-x-1">
+                    <span className="text-gold-500 tracking-tighter">★★★★★</span>
+                    <span>Rated Institution</span>
+                  </p>
                 </div>
               </div>
             </div>
