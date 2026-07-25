@@ -13,14 +13,17 @@ export default function ExamsCovered() {
   ];
 
   return (
-    <section className="py-24 bg-slate-100 relative" id="exams">
+    <section className="py-24 bg-slate-100/70 border-b border-slate-200/60 relative" id="exams">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-900 mb-3 tracking-tight">
+          <div className="inline-block px-3.5 py-1 rounded-md bg-gold-500/10 text-gold-700 border border-gold-500/25 text-xs font-bold uppercase tracking-widest mb-3">
+            COMPETITIVE PORTFOLIO
+          </div>
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-950 mb-3 tracking-tight">
             Exams We Cover
           </h2>
-          <p className="font-sans text-xs md:text-sm text-slate-600">
+          <p className="font-sans text-xs md:text-sm text-slate-700 font-medium">
             Targeted coaching for over 15 competitive legal examinations
           </p>
         </div>
@@ -30,16 +33,16 @@ export default function ExamsCovered() {
           {exams.map((exam, index) => (
             <div
               key={index}
-              className="card-top-accent bg-card-gradient p-6 rounded-2xl border border-slate-200/80 shadow-card hover:shadow-card-hover hover:border-gold-500/60 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between"
+              className="card-top-accent bg-white p-6 rounded-2xl border border-slate-200/90 shadow-card hover:shadow-card-hover hover:border-gold-500/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-gold-700 bg-gold-500/15 px-2.5 py-1 rounded-md inline-block mb-3 border border-gold-500/30 shadow-sm">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-gold-800 bg-gold-500/15 px-2.5 py-1 rounded-md inline-block mb-3 border border-gold-500/30 shadow-subtle">
                   {exam.badge}
                 </span>
-                <h3 className="font-serif text-base font-bold text-navy-900 mb-2 group-hover:text-gold-600 transition-colors">
+                <h3 className="font-serif text-base font-bold text-navy-950 mb-2 group-hover:text-gold-600 transition-colors">
                   {exam.title}
                 </h3>
-                <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                <p className="text-xs text-slate-700 leading-relaxed font-normal">
                   {exam.desc}
                 </p>
               </div>

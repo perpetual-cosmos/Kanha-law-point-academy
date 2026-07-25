@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-navy-950 text-slate-300 border-t border-gold-500/30 pt-16 pb-12">
+    <footer className="w-full bg-navy-950 text-slate-300 border-t border-gold-500/35 pt-16 pb-12">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-navy-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-navy-800/80">
           {/* Col 1: Academy Info */}
           <div className="lg:col-span-4 space-y-4">
             <a href="#" className="flex items-center space-x-3 group">
@@ -19,17 +19,17 @@ export default function Footer() {
                 <span className="font-serif text-base font-bold text-white tracking-wide">
                   Kanha Law Point Academy
                 </span>
-                <span className="text-[10px] font-bold tracking-widest uppercase text-gold-400">
+                <span className="text-[10px] font-extrabold tracking-widest uppercase text-gold-400">
                   Est. 2020 • Kanpur
                 </span>
               </div>
             </a>
-            <p className="font-sans text-xs text-slate-400 leading-relaxed max-w-sm">
+            <p className="font-sans text-xs text-slate-300 leading-relaxed max-w-sm font-normal">
               Kanha Law Point Academy is Uttar Pradesh&apos;s 5-Star rated institute for Judicial Services (PCS-J, HJS), CLAT-UG, CLAT-PG, and Law Officer examinations.
             </p>
             <div className="flex items-center space-x-3 text-gold-400 text-xs font-semibold">
               <span>★ 5-Star Rated Institution</span>
-              <span>•</span>
+              <span className="text-gold-500/40">•</span>
               <span>Kanpur Nagar, UP</span>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Col 2: Quick Links */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="font-serif text-sm font-bold text-gold-400 uppercase tracking-wider">Quick Links</h4>
-            <ul className="space-y-2 text-xs text-slate-300">
+            <ul className="space-y-2 text-xs font-medium text-slate-300">
               <li><a href="#about" className="hover:text-gold-300 transition-colors">About Us</a></li>
               <li><a href="#courses" className="hover:text-gold-300 transition-colors">Coaching Programs</a></li>
               <li><a href="#exams" className="hover:text-gold-300 transition-colors">Exams Covered</a></li>
@@ -49,7 +49,7 @@ export default function Footer() {
           {/* Col 3: Programs Covered */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-serif text-sm font-bold text-gold-400 uppercase tracking-wider">Top Examinations</h4>
-            <ul className="space-y-2 text-xs text-slate-300">
+            <ul className="space-y-2 text-xs font-medium text-slate-300">
               <li><a href="#exams" className="hover:text-gold-300 transition-colors">UP PCS-J Judicial Services</a></li>
               <li><a href="#exams" className="hover:text-gold-300 transition-colors">MP Civil Judge (MP CJ)</a></li>
               <li><a href="#exams" className="hover:text-gold-300 transition-colors">Bihar Judicial Services</a></li>
@@ -63,12 +63,12 @@ export default function Footer() {
           {/* Col 4: Contact Details */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-serif text-sm font-bold text-gold-400 uppercase tracking-wider">Campus Address</h4>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-xs text-slate-300 leading-relaxed font-normal">
               Office No. 8, Near Safipur,<br />
               Harjinder Nagar Inter College,<br />
               GT Road, Kanpur Nagar, UP - 208007
             </p>
-            <div className="pt-2 space-y-1.5 text-xs">
+            <div className="pt-2 space-y-1.5 text-xs font-semibold">
               <a href="tel:+919838477453" className="block text-gold-400 font-bold hover:underline">
                 Call: +91-9838477453
               </a>
@@ -83,15 +83,15 @@ export default function Footer() {
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-4">
           <div className="text-center md:text-left space-y-1">
             <p>© {new Date().getFullYear()} Kanha Law Point Academy. All Rights Reserved.</p>
-            <p className="text-[10px] text-slate-500">
+            <p className="text-[10px] text-slate-400 leading-relaxed">
               Disclaimer: All exam names, logos, and trademarks (CLAT, PCS-J, SEBI, JAG) belong to their respective statutory bodies. Kanha Law Point Academy is an independent coaching institution.
             </p>
           </div>
-          <div className="flex items-center space-x-4 text-xs font-medium">
+          <div className="flex items-center space-x-4 text-xs font-semibold whitespace-nowrap">
             <a href="#contact" className="hover:text-gold-400 transition-colors">Privacy Policy</a>
-            <span>•</span>
+            <span className="text-navy-700">•</span>
             <a href="#contact" className="hover:text-gold-400 transition-colors">Terms of Admission</a>
-            <span>•</span>
+            <span className="text-navy-700">•</span>
             <a href="#contact" className="hover:text-gold-400 transition-colors">Contact Us</a>
           </div>
         </div>

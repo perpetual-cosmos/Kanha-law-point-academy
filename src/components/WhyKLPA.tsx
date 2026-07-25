@@ -39,10 +39,13 @@ export default function WhyKLPA() {
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-900 mb-3 tracking-tight">
+          <div className="inline-block px-3.5 py-1 rounded-md bg-gold-500/10 text-gold-700 border border-gold-500/25 text-xs font-bold uppercase tracking-widest mb-3">
+            THE ACADEMY ADVANTAGE
+          </div>
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-navy-950 mb-3 tracking-tight">
             The Kanha Law Point Academy Edge
           </h2>
-          <p className="font-sans text-xs md:text-sm text-slate-600">
+          <p className="font-sans text-xs md:text-sm text-slate-700 font-medium">
             6 core pillars setting the benchmark for legal and judicial education
           </p>
         </div>
@@ -52,11 +55,11 @@ export default function WhyKLPA() {
           {edgePoints.map((item, index) => (
             <div
               key={index}
-              className="card-top-accent bg-card-gradient p-8 rounded-2xl border border-slate-200/80 shadow-card hover:shadow-card-hover hover:border-gold-500/50 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between"
+              className="card-top-accent bg-white p-8 rounded-2xl border border-slate-200/90 shadow-card hover:shadow-card-hover hover:border-gold-500/40 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
                 <div className="flex justify-between items-start mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold-500/15 via-amber-100/40 to-gold-500/20 border border-gold-500/30 p-2.5 flex items-center justify-center group-hover:scale-110 group-hover:border-gold-500/70 shadow-sm transition-all duration-300">
+                  <div className="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/25 p-2.5 flex items-center justify-center group-hover:scale-105 group-hover:border-gold-500/50 shadow-subtle transition-all duration-300">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -65,14 +68,14 @@ export default function WhyKLPA() {
                       className="w-full h-full object-contain drop-shadow-sm"
                     />
                   </div>
-                  <span className="font-serif text-xs font-bold text-gold-600/70 bg-gold-500/10 px-2.5 py-1 rounded-full border border-gold-500/20">
+                  <span className="font-serif text-xs font-bold text-gold-700 bg-gold-500/10 px-2.5 py-1 rounded-md border border-gold-500/20 shadow-subtle">
                     0{index + 1}
                   </span>
                 </div>
-                <h3 className="font-serif text-xl font-bold text-navy-900 mb-2 group-hover:text-gold-600 transition-colors">
+                <h3 className="font-serif text-xl font-bold text-navy-950 mb-2 group-hover:text-gold-600 transition-colors">
                   {item.title}
                 </h3>
-                <p className="font-sans text-xs md:text-sm text-slate-600 leading-relaxed">
+                <p className="font-sans text-xs md:text-sm text-slate-700 leading-relaxed font-normal">
                   {item.desc}
                 </p>
               </div>
