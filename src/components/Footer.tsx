@@ -82,7 +82,19 @@ export default function Footer() {
         {/* Bottom Disclaimers & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-4">
           <div className="text-center md:text-left space-y-1">
-            <p>© {new Date().getFullYear()} Kanha Law Point Academy. All Rights Reserved.</p>
+            <p>
+              © {new Date().getFullYear()} Kanha Law Point Academy. All Rights Reserved.
+              <span className="mx-2 text-navy-700">•</span>
+              Developed by:{" "}
+              <a
+                href="https://theunipick.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-400 font-semibold hover:underline transition-colors"
+              >
+                Tarun Singh
+              </a>
+            </p>
             <p className="text-[10px] text-slate-400 leading-relaxed">
               Disclaimer: All exam names, logos, and trademarks (CLAT, PCS-J, SEBI, JAG) belong to their respective statutory bodies. Kanha Law Point Academy is an independent coaching institution.
             </p>
