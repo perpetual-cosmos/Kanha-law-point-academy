@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Director() {
   return (
-    <section className="py-12 md:py-24 bg-slate-50 relative" id="director">
+    <section className="py-10 md:py-16 bg-slate-50 relative" id="director">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         <ScrollReveal delay={0}>
           <div className="bg-gradient-to-br from-navy-950 via-navy-900 to-slate-950 text-white rounded-3xl overflow-hidden border border-gold-500/40 shadow-navy-glow">

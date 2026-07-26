@@ -2,10 +2,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Courses() {
   return (
-    <section className="py-12 md:py-24 bg-slate-50 relative" id="courses">
-      <div className="max-w-container-max mx-auto px-4 md:px-8 space-y-8 md:space-y-12">
+    <section className="py-10 md:py-16 bg-slate-50 relative" id="courses">
+      <div className="max-w-container-max mx-auto px-4 md:px-8 space-y-6 md:space-y-10">
         {/* Section Header */}
-        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-6 md:mb-10">
           <div className="section-label-accent mb-3">
             <span>COURSES & CURRICULUM</span>
           </div>

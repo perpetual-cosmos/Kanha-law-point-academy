@@ -3,10 +3,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function PedagogyFacilities() {
   return (
-    <section className="py-12 md:py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="facilities">
+    <section className="py-10 md:py-16 bg-slate-100/70 border-t border-slate-200/60 relative" id="facilities">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
-        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-8 md:mb-16">
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-6 md:mb-10">
           <div className="section-label-accent mb-3">
             <span>INFRASTRUCTURE & ENVIRONMENT</span>
           </div>

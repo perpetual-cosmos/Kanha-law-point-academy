@@ -15,10 +15,10 @@ export default function ExamsCovered() {
   ];
 
   return (
-    <section className="py-12 md:py-24 bg-slate-100/70 border-b border-slate-200/60 relative" id="exams">
+    <section className="py-10 md:py-16 bg-slate-100/70 border-b border-slate-200/60 relative" id="exams">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
-        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-8 md:mb-16">
+        <ScrollReveal delay={0} variant="fade-up" className="text-center max-w-2xl mx-auto mb-6 md:mb-10">
           <div className="section-label-accent mb-3">
             <span>COMPETITIVE PORTFOLIO</span>
           </div>
@@ -35,11 +35,10 @@ export default function ExamsCovered() {
           {exams.map((exam, index) => (
             <ScrollReveal key={index} delay={index * 60}>
               <div
-                className={`card-top-accent p-6 rounded-2xl border shadow-card card-elevated-hover group flex flex-col justify-between h-full ${
-                  exam.flagship
+                className={`card-top-accent p-6 rounded-2xl border shadow-card card-elevated-hover group flex flex-col justify-between h-full ${exam.flagship
                     ? "bg-gradient-to-b from-amber-50/50 via-white to-white border-gold-500/40 ring-1 ring-gold-500/20"
                     : "bg-white border-slate-200/90"
-                }`}
+                  }`}
               >
                 <div>
                   <div className="flex items-center justify-between gap-1 mb-3">
