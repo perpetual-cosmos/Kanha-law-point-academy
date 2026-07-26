@@ -3,8 +3,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function About() {
   return (
-    <section className="py-24 bg-slate-50 relative" id="about">
-      <div className="max-w-container-max mx-auto px-4 md:px-8 space-y-20">
+    <section className="py-12 md:py-24 bg-slate-50 relative" id="about">
+      <div className="max-w-container-max mx-auto px-4 md:px-8 space-y-12 md:space-y-20">
         {/* Main About Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Content */}

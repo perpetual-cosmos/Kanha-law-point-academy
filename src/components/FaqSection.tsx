@@ -80,10 +80,10 @@ export default function FaqSection() {
   const filteredFaqs = faqs.filter((f) => f.cat === category);
 
   return (
-    <section className="py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="faq">
+    <section className="py-12 md:py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="faq">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
-        <ScrollReveal delay={0} className="text-center max-w-3xl mx-auto mb-16">
+        <ScrollReveal delay={0} className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <div className="section-label-accent mb-3">
             <span>FREQUENTLY ASKED QUESTIONS</span>
           </div>
@@ -96,7 +96,7 @@ export default function FaqSection() {
         </ScrollReveal>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2.5 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-2.5 mb-6 md:mb-12">
           {[
             { id: "judiciary", label: "Judiciary (PCS-J & HJS)" },
             { id: "clat", label: "CLAT (UG & PG)" },

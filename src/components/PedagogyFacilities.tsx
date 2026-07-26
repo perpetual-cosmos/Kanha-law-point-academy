@@ -3,10 +3,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function PedagogyFacilities() {
   return (
-    <section className="py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="facilities">
+    <section className="py-12 md:py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="facilities">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
-        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-16">
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-8 md:mb-16">
           <div className="section-label-accent mb-3">
             <span>INFRASTRUCTURE & ENVIRONMENT</span>
           </div>
@@ -19,7 +19,7 @@ export default function PedagogyFacilities() {
         </ScrollReveal>
 
         {/* 3 Facility Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
           {/* Card 1: Moot Court Hall with Image */}
           <ScrollReveal delay={100}>
             <div className="card-top-accent bg-white rounded-2xl border border-slate-200/90 shadow-card card-elevated-hover overflow-hidden flex flex-col justify-between group h-full">

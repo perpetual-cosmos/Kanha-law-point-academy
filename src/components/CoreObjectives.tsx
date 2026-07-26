@@ -20,10 +20,10 @@ export default function CoreObjectives() {
   ];
 
   return (
-    <section className="py-24 bg-slate-100/80 border-y border-slate-200/60 relative">
+    <section className="py-12 md:py-24 bg-slate-100/80 border-y border-slate-200/60 relative">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Section Header */}
-        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-16">
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-8 md:mb-16">
           <div className="section-label-accent mb-3">
             <span>ACADEMIC FOUNDATION</span>
           </div>
@@ -36,7 +36,7 @@ export default function CoreObjectives() {
         </ScrollReveal>
 
         {/* 3 Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
           {objectives.map((obj, i) => (
             <ScrollReveal key={i} delay={i * 80}>
               <div className="card-top-accent bg-[#FAFAFA] p-8 rounded-2xl border border-[#EEEEEE] shadow-card card-elevated-hover text-center group flex flex-col justify-between h-full">

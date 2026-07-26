@@ -15,9 +15,9 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="contact">
+    <section className="py-12 md:py-24 bg-slate-100/70 border-t border-slate-200/60 relative" id="contact">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           {/* Left Column: Campus Information */}
           <ScrollReveal delay={0} className="lg:col-span-5 space-y-8">
             <div>

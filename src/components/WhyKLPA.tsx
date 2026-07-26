@@ -36,10 +36,10 @@ export default function WhyKLPA() {
   ];
 
   return (
-    <section className="py-24 bg-slate-50 relative">
+    <section className="py-12 md:py-24 bg-slate-50 relative">
       <div className="max-w-container-max mx-auto px-4 md:px-8">
         {/* Header */}
-        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-16">
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-8 md:mb-16">
           <div className="section-label-accent mb-3">
             <span>THE ACADEMY ADVANTAGE</span>
           </div>
@@ -52,7 +52,7 @@ export default function WhyKLPA() {
         </ScrollReveal>
 
         {/* 6 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
           {edgePoints.map((item, index) => (
             <ScrollReveal key={index} delay={index * 80}>
               <div

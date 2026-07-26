@@ -2,10 +2,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Courses() {
   return (
-    <section className="py-24 bg-slate-50 relative" id="courses">
-      <div className="max-w-container-max mx-auto px-4 md:px-8 space-y-12">
+    <section className="py-12 md:py-24 bg-slate-50 relative" id="courses">
+      <div className="max-w-container-max mx-auto px-4 md:px-8 space-y-8 md:space-y-12">
         {/* Section Header */}
-        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-12">
+        <ScrollReveal delay={0} className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
           <div className="section-label-accent mb-3">
             <span>COURSES & CURRICULUM</span>
           </div>
@@ -98,7 +98,7 @@ export default function Courses() {
         </ScrollReveal>
 
         {/* CLAT-UG & CLAT-PG Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
           {/* CLAT-UG Card */}
           <ScrollReveal delay={150}>
             <div className="card-top-accent bg-card-gradient p-8 rounded-2xl border border-slate-200/90 shadow-card card-elevated-hover flex flex-col justify-between space-y-6 group h-full">
