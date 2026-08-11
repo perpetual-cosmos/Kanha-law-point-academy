@@ -50,20 +50,28 @@ export default function About() {
             </div>
           </ScrollReveal>
 
-          {/* Right Column: Library Photo + Floating Promise Quote Block */}
+          {/* Right Column: Director Photo in Law Library + Floating Promise Quote Block */}
           <ScrollReveal delay={150} className="lg:col-span-6 relative">
-            <div className="relative h-[380px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-elevated border border-slate-200">
+            <div className="relative h-[340px] sm:h-[400px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-elevated border-2 border-gold-500/30 bg-navy-950 group">
               <Image
-                src="/assets/hero-bg.jpg"
-                alt="Kanha Law Point Academy Library & Study Hall"
+                src="/klpaimages/adv-arbind-kumar-srivastava-advocate-chamber-headshot.jpeg"
+                alt="Adv. Arbind Kumar Srivastava - Director & Founder, Kanha Law Point Academy"
                 fill
-                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-[center_25%] group-hover:scale-105 transition-transform duration-500"
+                priority
               />
-              <div className="absolute inset-0 bg-navy-950/25"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/15 to-transparent"></div>
+
+              {/* Founder Tag Badge */}
+              <div className="absolute top-4 left-4 bg-navy-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-gold-500/40 text-gold-400 text-xs font-bold uppercase tracking-wider shadow-lg flex items-center space-x-2">
+                <span className="w-2 h-2 rounded-full bg-gold-400"></span>
+                <span>Adv. Arbind Kumar Srivastava</span>
+              </div>
             </div>
 
             {/* Prominent Promise Quote Block */}
-            <div className="absolute -bottom-6 -left-2 sm:left-4 right-4 sm:right-auto max-w-md bg-gradient-to-br from-navy-950 via-navy-900 to-slate-950 text-white p-6 rounded-2xl border-l-4 border-l-gold-500 border-t border-r border-b border-gold-500/40 shadow-navy-glow backdrop-blur-md">
+            <div className="relative -mt-10 sm:-mt-12 ml-4 mr-4 sm:ml-6 sm:mr-auto max-w-md bg-gradient-to-br from-navy-950 via-navy-900 to-slate-950 text-white p-5 sm:p-6 rounded-2xl border-l-4 border-l-gold-500 border-t border-r border-b border-gold-500/40 shadow-navy-glow backdrop-blur-md z-10">
               <div className="text-[10px] font-extrabold uppercase tracking-widest text-gold-400 mb-2 flex items-center space-x-2 font-sans">
                 <span className="w-2 h-2 rounded-full bg-gold-400"></span>
                 <span>OUR PROMISE</span>

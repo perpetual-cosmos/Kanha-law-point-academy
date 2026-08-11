@@ -12,7 +12,7 @@ export default function Director() {
               <div className="lg:col-span-5 p-8 md:p-12 flex justify-center">
                 <div className="relative w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden border-4 border-white shadow-2xl ring-4 ring-gold-500/50">
                   <Image
-                    src="/assets/director-portrait.jpg"
+                    src="/klpaimages/adv-arbind-kumar-srivastava-official-desk-portrait.jpeg"
                     alt="Adv. Arbind Kumar Srivastava"
                     fill
                     className="object-cover object-top"
