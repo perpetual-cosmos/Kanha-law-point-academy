@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Phone, Mail, MapPin, Star, Menu, X, ArrowRight } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,6 +21,14 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinkClass = isScrolled
+    ? "text-slate-950 font-bold hover:text-gold-600 transition-colors py-1 text-xs lg:text-sm"
+    : "text-slate-200 font-semibold hover:text-white transition-colors py-1 text-xs lg:text-sm";
+
+  const mobileNavLinkClass = isScrolled
+    ? "block text-base font-bold text-slate-950 hover:text-gold-600 py-3 border-b border-slate-200 transition-colors"
+    : "block text-base font-bold text-white hover:text-gold-400 py-3 border-b border-navy-800 transition-colors";
+
   return (
     <header className="fixed top-0 w-full z-50 transition-all duration-300">
       {/* Top Announcement Bar - visible on lg screens and up */}
@@ -27,25 +36,31 @@ export default function Navbar() {
         <div className="max-w-container-max mx-auto flex justify-between items-center font-sans">
           <div className="flex items-center space-x-5 text-slate-300">
             <a href="tel:+919838477453" className="flex items-center hover:text-gold-300 transition-colors font-medium">
-              <span className="material-symbols-outlined text-sm text-gold-500 mr-1.5">call</span>
+              <Phone className="w-3.5 h-3.5 text-gold-400 mr-1.5" />
               +91-9838477453
             </a>
-            <span className="text-gold-500/30">|</span>
+            <span className="text-gold-500/30">•</span>
             <a href="mailto:kanhalawpointacademy@gmail.com" className="flex items-center hover:text-gold-300 transition-colors font-medium">
-              <span className="material-symbols-outlined text-sm text-gold-500 mr-1.5">mail</span>
+              <Mail className="w-3.5 h-3.5 text-gold-400 mr-1.5" />
               kanhalawpointacademy@gmail.com
             </a>
-            <span className="text-gold-500/30">|</span>
+            <span className="text-gold-500/30">•</span>
             <span className="flex items-center text-slate-400 font-medium">
-              <span className="material-symbols-outlined text-sm text-gold-500 mr-1.5">location_on</span>
+              <MapPin className="w-3.5 h-3.5 text-gold-400 mr-1.5" />
               GT Road, Harjinder Nagar, Kanpur Nagar, UP
             </span>
           </div>
 
           <div className="flex items-center space-x-3">
-            <span className="bg-gold-500/15 text-gold-300 px-2.5 py-0.5 rounded text-[11px] font-bold border border-gold-500/30 tracking-wide flex items-center space-x-1">
+            <span className="bg-gold-500/15 text-gold-300 px-2.5 py-0.5 rounded text-[11px] font-bold border border-gold-500/30 tracking-wide flex items-center space-x-1.5">
               <span>Rated: </span>
-              <span className="text-gold-400 text-xs tracking-tighter">★★★★★</span>
+              <span className="flex items-center text-gold-400">
+                <Star className="w-3 h-3 fill-gold-400 text-gold-400" />
+                <Star className="w-3 h-3 fill-gold-400 text-gold-400" />
+                <Star className="w-3 h-3 fill-gold-400 text-gold-400" />
+                <Star className="w-3 h-3 fill-gold-400 text-gold-400" />
+                <Star className="w-3 h-3 fill-gold-400 text-gold-400" />
+              </span>
             </span>
             <span className="text-slate-300 text-xs font-medium">Admissions Open 2026-27</span>
           </div>
@@ -55,7 +70,7 @@ export default function Navbar() {
       {/* Main Navigation Bar */}
       <nav
         className={`w-full transition-all duration-300 ${isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-card border-b border-slate-200/90 py-2 sm:py-2.5 text-navy-900"
+          ? "bg-white/98 backdrop-blur-md shadow-md border-b border-slate-200 py-2 sm:py-2.5 text-navy-950"
           : "bg-navy-950/90 backdrop-blur-md border-b border-gold-500/20 py-2.5 sm:py-3 text-white"
           }`}
       >
@@ -71,7 +86,7 @@ export default function Navbar() {
               priority
             />
             <div className="flex flex-col">
-              <span className={`font-serif text-sm sm:text-base lg:text-lg font-bold tracking-tight transition-colors ${isScrolled ? "text-navy-950" : "text-white"}`}>
+              <span className={`font-serif text-sm sm:text-base lg:text-lg font-bold tracking-tight transition-colors ${isScrolled ? "text-slate-950" : "text-white"}`}>
                 Kanha Law Point Academy
               </span>
               <span className="text-[9px] sm:text-[10px] font-extrabold tracking-widest uppercase text-gold-500">
@@ -82,60 +97,28 @@ export default function Navbar() {
 
           {/* Centered Desktop Nav */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <Link
-              href="/"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <Link href="/" className={navLinkClass}>
               Home
             </Link>
-            <a
-              href="/#about"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <a href="/#about" className={navLinkClass}>
               About
             </a>
-            <a
-              href="/#courses"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <a href="/#courses" className={navLinkClass}>
               Programs
             </a>
-            <a
-              href="/#exams"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <a href="/#exams" className={navLinkClass}>
               Exams
             </a>
-            <a
-              href="/#facilities"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <a href="/#facilities" className={navLinkClass}>
               Facilities
             </a>
-            <Link
-              href="/gallery"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <Link href="/gallery" className={navLinkClass}>
               Gallery
             </Link>
-            <a
-              href="/#faq"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <a href="/#faq" className={navLinkClass}>
               FAQs
             </a>
-            <a
-              href="/#contact"
-              className={`text-xs lg:text-sm font-semibold hover:text-gold-500 transition-colors py-1 ${isScrolled ? "text-slate-700 hover:text-navy-950" : "text-slate-200 hover:text-white"
-                }`}
-            >
+            <a href="/#contact" className={navLinkClass}>
               Contact
             </a>
           </div>
@@ -146,9 +129,10 @@ export default function Navbar() {
               href="https://docs.google.com/forms/d/e/1FAIpQLSchf1qb75wEqkmveVvLfCQI_Wk1F9U3UsyeSmNsDrUJLtw4QQ/viewform?usp=publish-editor"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gold px-5 lg:px-6 py-2.5 rounded-lg text-xs uppercase font-bold tracking-wider shadow-gold block"
+              className="btn-gold px-5 lg:px-6 py-2.5 rounded-lg text-xs uppercase font-bold tracking-wider shadow-gold inline-flex items-center space-x-1.5"
             >
-              Enroll Now
+              <span>Enroll Now</span>
+              <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
 
@@ -157,39 +141,51 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle navigation menu"
-            className="md:hidden text-gold-500 focus:outline-none p-2 rounded-lg border border-gold-500/20 bg-navy-900/50"
+            className={`md:hidden focus:outline-none p-2 rounded-lg border transition-all ${
+              isScrolled
+                ? "bg-slate-100 border-slate-300 text-slate-950 hover:bg-slate-200"
+                : "bg-navy-900/50 border-gold-500/20 text-gold-400 hover:bg-navy-900"
+            }`}
           >
-            <span className="material-symbols-outlined text-2xl sm:text-3xl block">
-              {mobileMenuOpen ? "close" : "menu"}
-            </span>
+            {mobileMenuOpen ? (
+              <X className={`w-6 h-6 ${isScrolled ? "text-slate-950" : "text-gold-400"}`} />
+            ) : (
+              <Menu className={`w-6 h-6 ${isScrolled ? "text-slate-950" : "text-gold-400"}`} />
+            )}
           </button>
         </div>
 
         {/* Mobile Drawer */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-navy-950/98 backdrop-blur-xl text-white px-6 py-6 space-y-4 border-b border-gold-500/30 animate-in fade-in duration-200">
-            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+          <div
+            className={`md:hidden px-6 py-6 space-y-2 border-b backdrop-blur-xl animate-in fade-in duration-200 ${
+              isScrolled
+                ? "bg-white/98 text-slate-950 border-slate-200 shadow-2xl"
+                : "bg-navy-950/98 text-white border-gold-500/30"
+            }`}
+          >
+            <Link href="/" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               Home
             </Link>
-            <a href="/#about" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+            <a href="/#about" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               About Us
             </a>
-            <a href="/#courses" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+            <a href="/#courses" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               Programs
             </a>
-            <a href="/#exams" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+            <a href="/#exams" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               Exams Covered
             </a>
-            <a href="/#facilities" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+            <a href="/#facilities" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               Facilities
             </a>
-            <Link href="/gallery" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+            <Link href="/gallery" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               Gallery
             </Link>
-            <a href="/#faq" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+            <a href="/#faq" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               FAQs
             </a>
-            <a href="/#contact" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-semibold text-slate-200 py-2.5 border-b border-navy-800 hover:text-gold-400">
+            <a href="/#contact" onClick={() => setMobileMenuOpen(false)} className={mobileNavLinkClass}>
               Contact
             </a>
             <a
@@ -197,9 +193,10 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="btn-gold text-center py-3 rounded-lg text-sm font-bold uppercase tracking-wider block mt-4"
+              className="btn-gold text-center py-3 rounded-lg text-sm font-bold uppercase tracking-wider flex items-center justify-center space-x-2 mt-5 shadow-gold"
             >
-              Enroll Now
+              <span>Enroll Now</span>
+              <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         )}

@@ -97,24 +97,6 @@ const galleryData: CategorizedImage[] = [
     tag: "Academy Office",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-lounge-beige-shirt-front.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava at Event Lounge (Front Pose)",
-    category: "visits",
-    tag: "Event Lounge",
-  },
-  {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-lounge-beige-shirt-side.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava at Event Lounge (Side Angle)",
-    category: "visits",
-    tag: "Event Lounge",
-  },
-  {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-lounge-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Seated at Academy Lounge",
-    category: "visits",
-    tag: "Academy Lounge",
-  },
-  {
     src: "/klpaimages/adv-arbind-kumar-srivastava-birthday-celebration.jpeg",
     alt: "Adv. Arbind Kumar Srivastava Birthday Celebration",
     category: "visits",
@@ -125,12 +107,6 @@ const galleryData: CategorizedImage[] = [
     alt: "Adv. Arbind Kumar Srivastava Dining & Interaction",
     category: "visits",
     tag: "Interaction",
-  },
-  {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-cafe-black-vest.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Executive Lounge Session",
-    category: "visits",
-    tag: "Executive Lounge",
   },
   {
     src: "/klpaimages/adv-arbind-kumar-srivastava-outdoor-night-portrait.jpeg",
@@ -167,18 +143,6 @@ const galleryData: CategorizedImage[] = [
     alt: "Adv. Arbind Kumar Srivastava Mirror Portrait",
     category: "portraits",
     tag: "Mirror Portrait",
-  },
-  {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-grey-blazer-sofa.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Grey Blazer Lounge Pose",
-    category: "portraits",
-    tag: "Executive Blazer",
-  },
-  {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-sunglasses-sofa.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Seated in Lounge with Sunglasses",
-    category: "portraits",
-    tag: "Executive Style",
   },
   {
     src: "/klpaimages/adv-arbind-kumar-srivastava-standing-arch-night.jpeg",
