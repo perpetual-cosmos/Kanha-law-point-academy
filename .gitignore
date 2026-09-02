@@ -3,3 +3,5 @@ node_modules
 KLPA.zip
 KLPA_PROSPECTUS_2026_CORRECTED.md
 KLPA.pdf
+.env.example
+.env.local

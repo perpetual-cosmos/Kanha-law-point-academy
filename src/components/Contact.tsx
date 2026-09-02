@@ -4,14 +4,51 @@ import { useState, FormEvent } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    fullname: "",
+    phone: "",
+    email: "",
+    course: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setFormData((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 5000);
+    setIsSubmitting(true);
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.fullname,
+          phone: formData.phone,
+          email: formData.email,
+          course: formData.course,
+          message: formData.message,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to send enquiry. Please try again.");
+      }
+
+      setSubmitted(true);
+      setFormData({ fullname: "", phone: "", email: "", course: "", message: "" });
+    } catch (err: any) {
+      setErrorMessage(err.message || "Something went wrong. Please check your details and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -80,15 +117,28 @@ export default function Contact() {
             </p>
 
             {submitted ? (
-              <div className="p-8 bg-emerald-50/90 border border-emerald-300 rounded-xl text-center space-y-3 shadow-subtle">
+              <div className="p-8 bg-emerald-50/90 border border-emerald-300 rounded-xl text-center space-y-3 shadow-subtle animate-in fade-in duration-300">
                 <span className="material-symbols-outlined text-4xl text-emerald-600">check_circle</span>
                 <h4 className="font-serif text-xl font-bold text-navy-950">Enquiry Received!</h4>
                 <p className="text-xs text-slate-700 font-medium max-w-sm mx-auto">
-                  Thank you for reaching out. Our admissions counselor will contact you within 24 hours.
+                  Thank you for reaching out. Your details have been sent to our admissions team. We will contact you within 24 hours.
                 </p>
+                <button
+                  onClick={() => setSubmitted(false)}
+                  className="mt-3 text-xs font-bold text-gold-600 hover:underline uppercase tracking-wider"
+                >
+                  Submit Another Enquiry
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {errorMessage && (
+                  <div className="p-3.5 bg-rose-50 border border-rose-200 rounded-lg text-xs text-rose-700 font-medium flex items-center space-x-2">
+                    <span className="material-symbols-outlined text-base text-rose-500">error</span>
+                    <span>{errorMessage}</span>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="fullname" className="block text-[11px] font-bold uppercase tracking-wider text-navy-950 mb-1.5">
@@ -96,6 +146,8 @@ export default function Contact() {
                     </label>
                     <input
                       id="fullname"
+                      value={formData.fullname}
+                      onChange={handleChange}
                       className="w-full bg-slate-50/80 border border-slate-200 focus:border-gold-500 focus:bg-white focus:ring-2 focus:ring-gold-500/20 focus:outline-none rounded-lg text-xs text-slate-900 px-4 py-3.5 font-medium transition-all"
                       placeholder="e.g. Rahul Sharma"
                       type="text"
@@ -108,6 +160,8 @@ export default function Contact() {
                     </label>
                     <input
                       id="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="w-full bg-slate-50/80 border border-slate-200 focus:border-gold-500 focus:bg-white focus:ring-2 focus:ring-gold-500/20 focus:outline-none rounded-lg text-xs text-slate-900 px-4 py-3.5 font-medium transition-all"
                       placeholder="+91-9876543210"
                       type="tel"
@@ -122,6 +176,8 @@ export default function Contact() {
                   </label>
                   <input
                     id="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full bg-slate-50/80 border border-slate-200 focus:border-gold-500 focus:bg-white focus:ring-2 focus:ring-gold-500/20 focus:outline-none rounded-lg text-xs text-slate-900 px-4 py-3.5 font-medium transition-all"
                     placeholder="name@example.com"
                     type="email"
@@ -134,8 +190,9 @@ export default function Contact() {
                   </label>
                   <select
                     id="course"
+                    value={formData.course}
+                    onChange={handleChange}
                     className="w-full bg-slate-50/80 border border-slate-200 focus:border-gold-500 focus:bg-white focus:ring-2 focus:ring-gold-500/20 focus:outline-none rounded-lg text-xs text-slate-900 px-4 py-3.5 font-medium transition-all"
-                    defaultValue=""
                     required
                   >
                     <option value="" disabled>Select Course Interest</option>
@@ -153,16 +210,26 @@ export default function Contact() {
                   </label>
                   <textarea
                     id="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full bg-slate-50/80 border border-slate-200 focus:border-gold-500 focus:bg-white focus:ring-2 focus:ring-gold-500/20 focus:outline-none rounded-lg text-xs text-slate-900 px-4 py-3 font-medium h-24 transition-all"
                     placeholder="Ask about batch timings, fee structures, or demo classes..."
                   ></textarea>
                 </div>
 
                 <button
-                  className="w-full btn-navy py-4 rounded-lg text-xs font-bold uppercase tracking-wider shadow-md mt-3"
+                  disabled={isSubmitting}
+                  className="w-full btn-navy py-4 rounded-lg text-xs font-bold uppercase tracking-wider shadow-md mt-3 flex items-center justify-center space-x-2 disabled:opacity-70 disabled:cursor-not-allowed"
                   type="submit"
                 >
-                  SUBMIT ENQUIRY
+                  {isSubmitting ? (
+                    <>
+                      <span className="w-4 h-4 border-2 border-gold-400 border-t-transparent rounded-full animate-spin"></span>
+                      <span>SENDING ENQUIRY...</span>
+                    </>
+                  ) : (
+                    <span>SUBMIT ENQUIRY</span>
+                  )}
                 </button>
               </form>
             )}
