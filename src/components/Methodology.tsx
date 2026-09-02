@@ -39,6 +39,7 @@ export default function Methodology() {
                 src="/assets/icons-set.png"
                 alt="High-quality icon set for legal education: Gavel, Scales of Justice, Law Book, Graduation Cap, and Court Building"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-contain object-center"
               />
             </div>

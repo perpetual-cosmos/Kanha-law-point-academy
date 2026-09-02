@@ -4,7 +4,7 @@ export default function CoreObjectives() {
   const objectives = [
     {
       icon: "gavel",
-      title: "ADVOCACY SKILLS",
+      title: "LEGAL PLEADING SKILLS",
       desc: "Equipping future lawyers with sharp legal reasoning, case analysis, and oral pleading mastery.",
     },
     {

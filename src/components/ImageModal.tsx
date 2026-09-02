@@ -67,7 +67,7 @@ export default function ImageModal({
         <div className="w-full flex items-center justify-between py-2 px-4 mb-2 text-white">
           <div className="flex items-center space-x-3">
             <span className="px-2.5 py-0.5 rounded-full bg-gold-500/20 text-gold-400 border border-gold-500/30 text-xs font-bold tracking-wide">
-              {currentImage.tag || "Adv. Arbind Kumar Srivastava"}
+              {currentImage.tag || "Arbind Kumar Srivastava"}
             </span>
             <span className="text-xs text-slate-300 font-mono">
               {currentIndex + 1} / {images.length}

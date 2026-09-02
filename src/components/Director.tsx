@@ -12,9 +12,10 @@ export default function Director() {
               <div className="lg:col-span-5 p-8 md:p-12 flex justify-center">
                 <div className="relative w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden border-4 border-white shadow-2xl ring-4 ring-gold-500/50">
                   <Image
-                    src="/klpaimages/adv-arbind-kumar-srivastava-official-desk-portrait.jpeg"
-                    alt="Adv. Arbind Kumar Srivastava"
+                    src="/klpaimages/arbind-kumar-srivastava-official-desk-portrait.jpeg"
+                    alt="Arbind Kumar Srivastava"
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover object-top"
                   />
                 </div>
@@ -32,15 +33,15 @@ export default function Director() {
                 </h3>
 
                 <blockquote className="font-serif text-base sm:text-lg md:text-xl text-slate-100 italic leading-relaxed font-light pl-4 border-l-4 border-gold-500 my-4">
-                  &ldquo;The legal profession requires more than just knowledge of statutes; it demands intellect, integrity, and the courage to advocate for truth. At Kanha Law Point Academy, we mentor future leaders who will uphold the sanctity of our judicial system.&rdquo;
+                  &ldquo;The legal profession requires more than just knowledge of statutes; it demands intellect, integrity, and the courage to uphold truth. At Kanha Law Point Academy, we mentor future leaders who will uphold the sanctity of our judicial system.&rdquo;
                 </blockquote>
 
                 <div className="pt-6 border-t border-gold-500/25">
                   <h4 className="font-serif text-xl font-bold text-gold-400 uppercase tracking-wide">
-                    ADV. ARBIND KUMAR SRIVASTAVA
+                    ARBIND KUMAR SRIVASTAVA
                   </h4>
                   <p className="text-xs text-slate-300 font-semibold mt-1 tracking-wide">
-                    Managing Director, Kanha Law Point Academy • Advocate, High Court
+                    Managing Director & Legal Mentor, Kanha Law Point Academy
                   </p>
                 </div>
               </div>

@@ -126,7 +126,7 @@ export default function Navbar() {
           {/* Action Button */}
           <div className="hidden md:block">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSchf1qb75wEqkmveVvLfCQI_Wk1F9U3UsyeSmNsDrUJLtw4QQ/viewform?usp=publish-editor"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScNyWUfDqBCdpd9eDyqo0iCYcBhrILK_3lMOx6ypLIV7kESjg/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold px-5 lg:px-6 py-2.5 rounded-lg text-xs uppercase font-bold tracking-wider shadow-gold inline-flex items-center space-x-1.5"
@@ -189,7 +189,7 @@ export default function Navbar() {
               Contact
             </a>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSchf1qb75wEqkmveVvLfCQI_Wk1F9U3UsyeSmNsDrUJLtw4QQ/viewform?usp=publish-editor"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScNyWUfDqBCdpd9eDyqo0iCYcBhrILK_3lMOx6ypLIV7kESjg/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}

@@ -84,11 +84,24 @@ export default function Footer() {
         </div>
 
         {/* Bottom Disclaimers & Copyright */}
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-4">
-          <div className="text-center md:text-left space-y-1">
+        <div className="pt-8 flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-slate-400 gap-4">
+          <div className="space-y-1">
             <p>
               © {new Date().getFullYear()} Kanha Law Point Academy. All Rights Reserved.
-              <span className="mx-2 text-navy-700">•</span>
+            </p>
+            <p className="text-[10px] text-slate-400 leading-relaxed max-w-xl">
+              Disclaimer: All exam names, logos, and trademarks (CLAT, PCS-J, SEBI, JAG) belong to their respective statutory bodies. Kanha Law Point Academy is an independent coaching institution.
+            </p>
+          </div>
+          <div className="flex flex-col items-start md:items-end space-y-1.5 whitespace-nowrap">
+            <div className="flex items-center space-x-4 text-xs font-semibold">
+              <a href="#contact" className="hover:text-gold-400 transition-colors">Privacy Policy</a>
+              <span className="text-navy-700">•</span>
+              <a href="#contact" className="hover:text-gold-400 transition-colors">Terms of Admission</a>
+              <span className="text-navy-700">•</span>
+              <a href="#contact" className="hover:text-gold-400 transition-colors">Contact Us</a>
+            </div>
+            <p className="text-xs text-slate-400">
               Developed by:{" "}
               <a
                 href="https://theunipick.vercel.app/"
@@ -99,16 +112,6 @@ export default function Footer() {
                 Tarun Singh
               </a>
             </p>
-            <p className="text-[10px] text-slate-400 leading-relaxed">
-              Disclaimer: All exam names, logos, and trademarks (CLAT, PCS-J, SEBI, JAG) belong to their respective statutory bodies. Kanha Law Point Academy is an independent coaching institution.
-            </p>
-          </div>
-          <div className="flex items-center space-x-4 text-xs font-semibold whitespace-nowrap">
-            <a href="#contact" className="hover:text-gold-400 transition-colors">Privacy Policy</a>
-            <span className="text-navy-700">•</span>
-            <a href="#contact" className="hover:text-gold-400 transition-colors">Terms of Admission</a>
-            <span className="text-navy-700">•</span>
-            <a href="#contact" className="hover:text-gold-400 transition-colors">Contact Us</a>
           </div>
         </div>
       </div>

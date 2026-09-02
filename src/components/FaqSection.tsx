@@ -12,12 +12,12 @@ export default function FaqSection() {
     {
       cat: "judiciary",
       q: "What is the eligibility criteria for Civil Judge Junior Division (PCS-J)?",
-      a: "Law graduates possessing an LL.B Degree (3-Year or 5-Year Integrated) from a recognized university who are enrolled or eligible to enroll as an Advocate under the Advocates Act, 1961 are eligible. Final-year law students can also appear in the Preliminary Examination provided they present their qualifying degree certificate prior to the Viva-Voce interview.",
+      a: "Law graduates possessing an LL.B Degree (3-Year or 5-Year Integrated) from a recognized university who are enrolled or eligible to enroll with a State Bar Council under statutory enrolment rules are eligible. Final-year law students can also appear in the Preliminary Examination provided they present their qualifying degree certificate prior to the Viva-Voce interview.",
     },
     {
       cat: "judiciary",
       q: "What is Higher Judiciary Services (HJS) and who can apply?",
-      a: "Higher Judiciary Services (HJS) is direct recruitment for appointment as Additional District & Sessions Judge (ADJ). Candidates must possess an LL.B Degree and have a minimum of 7 years of continuous active litigating practice as an Advocate in courts.",
+      a: "Higher Judiciary Services (HJS) is direct recruitment for appointment as Additional District & Sessions Judge (ADJ). Candidates must possess an LL.B Degree and have a minimum of 7 years of continuous active legal practice in courts.",
     },
     {
       cat: "judiciary",
@@ -55,7 +55,7 @@ export default function FaqSection() {
     },
     {
       cat: "other-exams",
-      q: "What is the JAG (Judge Advocate General) Military Law Commission entry?",
+      q: "What is the JAG (Military Legal Officer) Commission entry?",
       a: "JAG Officer entry is direct recruitment into the legal branch of the Indian Armed Forces (Army, Navy, Air Force) for law graduates with minimum 55% aggregate marks and CLAT-PG qualification, followed by the Services Selection Board (SSB) interview.",
     },
 
@@ -67,8 +67,8 @@ export default function FaqSection() {
     },
     {
       cat: "admissions",
-      q: "Are evening or weekend batches available for practicing advocates?",
-      a: "Yes. KLPA offers dedicated evening and weekend batches tailored for practicing advocates, LL.M scholars, and working professionals targeting Higher Judiciary Services (HJS) or judicial state exams.",
+      q: "Are evening or weekend batches available for working legal professionals?",
+      a: "Yes. KLPA offers dedicated evening and weekend batches tailored for working legal professionals, LL.M scholars, and HJS aspirants targeting Higher Judiciary Services or judicial state exams.",
     },
     {
       cat: "admissions",

@@ -14,7 +14,7 @@ export default function PedagogyFacilities() {
             Campus Facilities
           </h2>
           <p className="font-sans text-xs md:text-sm text-slate-700 font-medium">
-            State-of-the-art infrastructure designed for legal study and practical advocacy training
+            State-of-the-art infrastructure designed for legal study and practical legal pleading training
           </p>
         </ScrollReveal>
 
@@ -29,6 +29,7 @@ export default function PedagogyFacilities() {
                     src="/assets/hero-bg.jpg"
                     alt="Kanha Law Point Academy In-House Moot Court Hall"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/30 to-transparent"></div>
@@ -46,14 +47,14 @@ export default function PedagogyFacilities() {
                     </h3>
                   </div>
                   <p className="text-xs md:text-sm text-slate-600 leading-relaxed font-normal">
-                    Simulated courtroom environment for live advocacy training, moot court competitions, and court etiquette drills.
+                    Simulated courtroom environment for live legal pleading training, moot court competitions, and court etiquette drills.
                   </p>
                 </div>
               </div>
               <div className="px-6 pb-6 pt-0">
                 <span className="text-[10px] font-extrabold uppercase tracking-wider text-gold-700 flex items-center space-x-1.5 bg-gold-500/10 px-2.5 py-1 rounded-md border border-gold-500/20">
                   <span className="material-symbols-outlined text-sm">gavel</span>
-                  <span>Advocacy & Pleading Practice</span>
+                  <span>Moot & Pleading Practice</span>
                 </span>
               </div>
             </div>

@@ -21,7 +21,7 @@ export default function ToppersGallery() {
       rank: "Rank 8",
       exam: "MP Civil Judge Exam",
       batch: "Batch 2023",
-      quote: "Adv. A.K. Srivastava Sir's personal guidance during the viva-voce mock interview completely transformed my confidence.",
+      quote: "Director A.K. Srivastava Sir's personal guidance during the viva-voce mock interview completely transformed my confidence.",
       role: "Civil Judge, Madhya Pradesh",
     },
     {

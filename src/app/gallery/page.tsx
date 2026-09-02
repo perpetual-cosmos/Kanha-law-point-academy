@@ -13,152 +13,152 @@ interface CategorizedImage extends GalleryImage {
 
 const galleryData: CategorizedImage[] = [
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-official-desk-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava at Official Desk with Law Statutes & Public Welfare Foundation Badge",
+    src: "/klpaimages/arbind-kumar-srivastava-official-desk-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava at Official Desk with Law Statutes & Public Welfare Foundation Badge",
     category: "chamber",
     tag: "Official Desk",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-advocate-chamber-headshot.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Headshot in Advocate Chamber",
+    src: "/klpaimages/arbind-kumar-srivastava-legal-chamber-headshot.jpeg",
+    alt: "Arbind Kumar Srivastava Headshot in Legal Chamber",
     category: "portraits",
     tag: "Chamber Headshot",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-studying-case-files.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Reviewing Legal Case Documents & Case Files",
+    src: "/klpaimages/arbind-kumar-srivastava-studying-case-files.jpeg",
+    alt: "Arbind Kumar Srivastava Reviewing Legal Case Documents & Case Files",
     category: "library",
     tag: "Case File Analysis",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-law-library-bookshelf.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava in Legal Research Library with Extensive Law Volumes",
+    src: "/klpaimages/arbind-kumar-srivastava-law-library-bookshelf.jpeg",
+    alt: "Arbind Kumar Srivastava in Legal Research Library with Extensive Law Volumes",
     category: "library",
     tag: "Law Library",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-advocate-chamber-desk.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava in Advocate Chamber with Legal Colleagues",
+    src: "/klpaimages/arbind-kumar-srivastava-legal-chamber-desk.jpeg",
+    alt: "Arbind Kumar Srivastava in Legal Chamber with Legal Colleagues",
     category: "chamber",
     tag: "Chamber Practice",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-advocate-chamber-sitting.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Seated at Legal Conference Desk",
+    src: "/klpaimages/arbind-kumar-srivastava-legal-chamber-sitting.jpeg",
+    alt: "Arbind Kumar Srivastava Seated at Legal Conference Desk",
     category: "chamber",
     tag: "Conference Desk",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-advocate-coat-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Formal Advocate Gown & Coat Portrait",
+    src: "/klpaimages/arbind-kumar-srivastava-legal-coat-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava Formal Gown & Coat Portrait",
     category: "portraits",
-    tag: "Advocate Portrait",
+    tag: "Director Portrait",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-tilak-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Traditional Tilak Formal Portrait",
+    src: "/klpaimages/arbind-kumar-srivastava-tilak-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava Traditional Tilak Formal Portrait",
     category: "portraits",
     tag: "Formal Portrait",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-white-kurta-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava White Indian Attire Headshot",
+    src: "/klpaimages/arbind-kumar-srivastava-white-kurta-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava White Indian Attire Headshot",
     category: "portraits",
     tag: "Indian Attire",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-olive-shirt-headshot.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Executive Headshot in Office",
+    src: "/klpaimages/arbind-kumar-srivastava-olive-shirt-headshot.jpeg",
+    alt: "Arbind Kumar Srivastava Executive Headshot in Office",
     category: "portraits",
     tag: "Executive Headshot",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-maroon-shirt-phone.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Executive Consultation",
+    src: "/klpaimages/arbind-kumar-srivastava-maroon-shirt-phone.jpeg",
+    alt: "Arbind Kumar Srivastava Executive Consultation",
     category: "portraits",
     tag: "Consultation",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-maroon-shirt-office.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Office View",
+    src: "/klpaimages/arbind-kumar-srivastava-maroon-shirt-office.jpeg",
+    alt: "Arbind Kumar Srivastava Office View",
     category: "chamber",
     tag: "Office View",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-printed-kurta-office.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Office Desk with Framed Leaders",
+    src: "/klpaimages/arbind-kumar-srivastava-printed-kurta-office.jpeg",
+    alt: "Arbind Kumar Srivastava Office Desk with Framed Leaders",
     category: "chamber",
     tag: "Office Desk",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-blue-shirt-office.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Academy Office View",
+    src: "/klpaimages/arbind-kumar-srivastava-blue-shirt-office.jpeg",
+    alt: "Arbind Kumar Srivastava Academy Office View",
     category: "chamber",
     tag: "Academy Office",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-birthday-celebration.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Birthday Celebration",
+    src: "/klpaimages/arbind-kumar-srivastava-birthday-celebration.jpeg",
+    alt: "Arbind Kumar Srivastava Birthday Celebration",
     category: "visits",
     tag: "Celebration",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-dining-table-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Dining & Interaction",
+    src: "/klpaimages/arbind-kumar-srivastava-dining-table-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava Dining & Interaction",
     category: "visits",
     tag: "Interaction",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-outdoor-night-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Outdoor Evening Event",
+    src: "/klpaimages/arbind-kumar-srivastava-outdoor-night-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava Outdoor Evening Event",
     category: "visits",
     tag: "Evening Event",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-black-suit-standing-1.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Full Suit Standing Portrait (Pose 1)",
+    src: "/klpaimages/arbind-kumar-srivastava-black-suit-standing-1.jpeg",
+    alt: "Arbind Kumar Srivastava Full Suit Standing Portrait (Pose 1)",
     category: "portraits",
     tag: "3-Piece Suit",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-black-suit-standing-2.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Full Suit Standing Portrait (Pose 2)",
+    src: "/klpaimages/arbind-kumar-srivastava-black-suit-standing-2.jpeg",
+    alt: "Arbind Kumar Srivastava Full Suit Standing Portrait (Pose 2)",
     category: "portraits",
     tag: "3-Piece Suit",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-black-suit-standing-3.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Full Suit Standing Pose",
+    src: "/klpaimages/arbind-kumar-srivastava-black-suit-standing-3.jpeg",
+    alt: "Arbind Kumar Srivastava Full Suit Standing Pose",
     category: "portraits",
     tag: "3-Piece Suit",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-black-suit-standing-4.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Executive Suit Portrait",
+    src: "/klpaimages/arbind-kumar-srivastava-black-suit-standing-4.jpeg",
+    alt: "Arbind Kumar Srivastava Executive Suit Portrait",
     category: "portraits",
     tag: "Executive Suit",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-black-suit-mirror-selfie.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Mirror Portrait",
+    src: "/klpaimages/arbind-kumar-srivastava-black-suit-mirror-selfie.jpeg",
+    alt: "Arbind Kumar Srivastava Mirror Portrait",
     category: "portraits",
     tag: "Mirror Portrait",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-standing-arch-night.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Standing at Jai Shree Shyam Arch Gate (Night)",
+    src: "/klpaimages/arbind-kumar-srivastava-standing-arch-night.jpeg",
+    alt: "Arbind Kumar Srivastava Standing at Jai Shree Shyam Arch Gate (Night)",
     category: "visits",
     tag: "Landmark Visit",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-standing-arch-gate.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava at Jai Shree Shyam Heritage Gate",
+    src: "/klpaimages/arbind-kumar-srivastava-standing-arch-gate.jpeg",
+    alt: "Arbind Kumar Srivastava at Jai Shree Shyam Heritage Gate",
     category: "visits",
     tag: "Heritage Gate",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-temple-visit.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Pilgrimage & Temple Visit",
+    src: "/klpaimages/arbind-kumar-srivastava-temple-visit.jpeg",
+    alt: "Arbind Kumar Srivastava Pilgrimage & Temple Visit",
     category: "visits",
     tag: "Temple Visit",
   },
@@ -227,7 +227,7 @@ export default function GalleryPage() {
             </h1>
 
             <p className="font-sans text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
-              Explore the legal journey, chamber practice, law library, events, and official portraits of <strong className="text-white">Adv. Arbind Kumar Srivastava</strong>, Director of Kanha Law Point Academy.
+              Explore the legal journey, chamber practice, law library, events, and official portraits of <strong className="text-white">Arbind Kumar Srivastava</strong>, Director of Kanha Law Point Academy.
             </p>
           </div>
         </section>
@@ -322,11 +322,11 @@ export default function GalleryPage() {
               Start Your Judicial & Legal Career Journey Today
             </h3>
             <p className="text-slate-300 text-sm max-w-xl mx-auto font-light">
-              Join Kanha Law Point Academy Kanpur under the personal guidance of Adv. Arbind Kumar Srivastava. Admissions open for 2026-2027.
+              Join Kanha Law Point Academy Kanpur under the personal guidance of Director Arbind Kumar Srivastava. Admissions open for 2026-2027.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSchf1qb75wEqkmveVvLfCQI_Wk1F9U3UsyeSmNsDrUJLtw4QQ/viewform?usp=publish-editor"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScNyWUfDqBCdpd9eDyqo0iCYcBhrILK_3lMOx6ypLIV7kESjg/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold px-8 py-3 rounded-xl text-xs uppercase font-bold tracking-wider shadow-gold"

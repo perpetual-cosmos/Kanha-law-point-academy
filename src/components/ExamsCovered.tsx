@@ -9,7 +9,7 @@ export default function ExamsCovered() {
     { title: "MP CJ", badge: "MP Judiciary", desc: "Madhya Pradesh Judicial Services Civil Judge Examination" },
     { title: "Bihar Judicial", badge: "BJSE", desc: "Bihar Civil Judge Prelims, Mains & Viva-Voce Examination" },
     { title: "SEBI Law Officer", badge: "Grade A", desc: "Securities Exchange Board of India Grade A Officer Exam" },
-    { title: "JAG Officer", badge: "Defence Sector", desc: "Judge Advocate General Military Law Commission (Army/Navy/Air Force)" },
+    { title: "JAG Officer", badge: "Defence Sector", desc: "JAG Military Legal Officer Commission (Army/Navy/Air Force)" },
     { title: "SLAT", badge: "Symbiosis", desc: "Symbiosis Law School Entrance Examination" },
     { title: "LSAT India", badge: "Private NLUs", desc: "Law School Admission Test for Top Indian Private Universities" },
   ];

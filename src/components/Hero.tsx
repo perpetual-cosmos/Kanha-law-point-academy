@@ -9,6 +9,7 @@ export default function Hero() {
           src="/assets/hero-bg.jpg"
           alt="Kanha Law Point Academy Library"
           fill
+          sizes="100vw"
           priority
           className="object-cover object-center opacity-65 scale-100 transition-opacity duration-500"
         />
@@ -43,7 +44,7 @@ export default function Hero() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 max-w-md mx-auto sm:max-w-none">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSchf1qb75wEqkmveVvLfCQI_Wk1F9U3UsyeSmNsDrUJLtw4QQ/viewform?usp=publish-editor"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScNyWUfDqBCdpd9eDyqo0iCYcBhrILK_3lMOx6ypLIV7kESjg/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto btn-gold px-8 py-3.5 rounded-lg text-xs sm:text-sm font-bold uppercase tracking-wider text-center shadow-gold"

@@ -54,8 +54,8 @@ export default function About() {
           <ScrollReveal delay={150} className="lg:col-span-6 relative">
             <div className="relative h-[340px] sm:h-[400px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-elevated border-2 border-gold-500/30 bg-navy-950 group">
               <Image
-                src="/klpaimages/adv-arbind-kumar-srivastava-advocate-chamber-headshot.jpeg"
-                alt="Adv. Arbind Kumar Srivastava - Director & Founder, Kanha Law Point Academy"
+                src="/klpaimages/arbind-kumar-srivastava-legal-chamber-headshot.jpeg"
+                alt="Arbind Kumar Srivastava - Director & Founder, Kanha Law Point Academy"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-[center_25%] group-hover:scale-105 transition-transform duration-500"
@@ -66,7 +66,7 @@ export default function About() {
               {/* Founder Tag Badge */}
               <div className="absolute top-4 left-4 bg-navy-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-gold-500/40 text-gold-400 text-xs font-bold uppercase tracking-wider shadow-lg flex items-center space-x-2">
                 <span className="w-2 h-2 rounded-full bg-gold-400"></span>
-                <span>Adv. Arbind Kumar Srivastava</span>
+                <span>Director Arbind Kumar Srivastava</span>
               </div>
             </div>
 
@@ -77,7 +77,7 @@ export default function About() {
                 <span>OUR PROMISE</span>
               </div>
               <blockquote className="text-xs sm:text-sm text-slate-200 italic leading-relaxed font-light pl-0.5">
-                &ldquo;To provide world-class legal education combining rigorous academic standards with practical advocacy training.&rdquo;
+                &ldquo;To provide world-class legal education combining rigorous academic standards with practical legal & pleading training.&rdquo;
               </blockquote>
             </div>
           </ScrollReveal>

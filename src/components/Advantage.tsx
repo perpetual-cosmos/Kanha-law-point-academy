@@ -53,7 +53,7 @@ export default function Advantage() {
               Moot Court Exposure
             </h3>
             <p className="font-sans text-slate-600 text-xs md:text-sm leading-relaxed font-normal">
-              Practical advocacy training through simulated court proceedings to develop crucial argumentation skills.
+              Practical courtroom pleading training through simulated court proceedings to develop crucial argumentation skills.
             </p>
           </div>
         </div>

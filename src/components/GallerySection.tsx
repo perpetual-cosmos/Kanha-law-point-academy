@@ -8,34 +8,34 @@ import ImageModal, { GalleryImage } from "@/components/ImageModal";
 
 const previewImages: GalleryImage[] = [
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-official-desk-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava at Official Desk with Law Statutes & Public Welfare Foundation Badge",
+    src: "/klpaimages/arbind-kumar-srivastava-official-desk-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava at Official Desk with Law Statutes & Public Welfare Foundation Badge",
     tag: "Official Desk",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-studying-case-files.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Reviewing Legal Case Documents & Precedents",
+    src: "/klpaimages/arbind-kumar-srivastava-studying-case-files.jpeg",
+    alt: "Arbind Kumar Srivastava Reviewing Legal Case Documents & Precedents",
     tag: "Legal Practice",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-advocate-chamber-headshot.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava Advocate Chamber Portrait with Law Library",
+    src: "/klpaimages/arbind-kumar-srivastava-legal-chamber-headshot.jpeg",
+    alt: "Arbind Kumar Srivastava Chamber Portrait with Law Library",
     tag: "Chamber Headshot",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-law-library-bookshelf.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava in Legal Research Library",
+    src: "/klpaimages/arbind-kumar-srivastava-law-library-bookshelf.jpeg",
+    alt: "Arbind Kumar Srivastava in Legal Research Library",
     tag: "Law Library",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-advocate-chamber-desk.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava in Advocate Chamber with Legal Colleagues",
+    src: "/klpaimages/arbind-kumar-srivastava-legal-chamber-desk.jpeg",
+    alt: "Arbind Kumar Srivastava in Legal Chamber with Legal Colleagues",
     tag: "Chamber Practice",
   },
   {
-    src: "/klpaimages/adv-arbind-kumar-srivastava-advocate-coat-portrait.jpeg",
-    alt: "Adv. Arbind Kumar Srivastava High Court Advocate Portrait",
-    tag: "Advocate Portrait",
+    src: "/klpaimages/arbind-kumar-srivastava-legal-coat-portrait.jpeg",
+    alt: "Arbind Kumar Srivastava Formal Legal Coat Portrait",
+    tag: "Director Portrait",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function GallerySection() {
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-slate-300 font-light leading-relaxed">
-            Moments from our legal chamber, academic mentorship sessions, and legal advocacy leadership under <strong className="text-white font-medium">Adv. Arbind Kumar Srivastava</strong>.
+            Moments from our legal chamber, academic mentorship sessions, and legal education leadership under <strong className="text-white font-medium">Arbind Kumar Srivastava</strong>.
           </p>
         </ScrollReveal>
 

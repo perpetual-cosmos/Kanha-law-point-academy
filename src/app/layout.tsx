@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "CLAT Coaching Kanpur",
     "Judiciary Coaching Kanpur",
     "Law Academy Uttar Pradesh",
-    "Adv. Arbind Kumar Srivastava",
+    "Arbind Kumar Srivastava",
   ],
   icons: {
     icon: "/assets/logo.png",
